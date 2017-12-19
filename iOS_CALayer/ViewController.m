@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "PaySuccessView.h"
 #import "InstrumentProgressView.h"
+#import "WaveView.h"
+#import "CircleWaitingView.h"
 
 @interface ViewController ()
 @property(nonatomic,strong) UIView* customView;
@@ -27,7 +29,9 @@
     self.customView = [[self.customViewClass alloc] initWithFrame:self.view.bounds];
     self.customView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.customView];
-    [self showTime];    
+    [self showTime];
+    
+    
 }
 
 -(void)dealloc{

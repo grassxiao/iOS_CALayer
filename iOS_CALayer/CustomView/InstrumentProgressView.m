@@ -37,7 +37,7 @@ alpha:1.0]
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self creatSelf];
+        [self createSelf];
     }
     
     return self;
@@ -46,7 +46,7 @@ alpha:1.0]
 -(id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [self creatSelf];
+        [self createSelf];
     }
     
     return self;
@@ -56,7 +56,7 @@ alpha:1.0]
     NSLog(@"dealloc");
 }
 
--(void)creatSelf{
+-(void)createSelf{
     self.backgroudLayer = [CAShapeLayer layer];
     _backgroudLayer.fillColor =  [[UIColor clearColor] CGColor];
     _backgroudLayer.strokeColor  = [UIColorFromRGB(0x4a4757) CGColor];

@@ -10,6 +10,12 @@
 #import "ViewController.h"
 #import "PaySuccessView.h"
 #import "InstrumentProgressView.h"
+#import "WaveView.h"
+#import "CircleWaitingView.h"
+#import "RainView.h"
+#import "TextLayerView.h"
+#import "TiledLayerView.h"
+#import "TransformView.h"
 
 @interface TableViewController ()
 @property (nonatomic,strong) NSArray* demoViews;
@@ -19,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.demoViews = @[[PaySuccessView class],[InstrumentProgressView class]];
+    self.demoViews = @[[PaySuccessView class],[InstrumentProgressView class],[WaveView class],[CircleWaitingView class],[RainView class],[TextLayerView class],[TiledLayerView class],[TransformView class]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
