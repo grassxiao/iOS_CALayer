@@ -50,6 +50,9 @@
     [self.layer addSublayer:self.textLayer];
 }
 
+-(void)layoutSublayersOfLayer:(CALayer *)layer{
+    self.textLayer.frame = self.bounds;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

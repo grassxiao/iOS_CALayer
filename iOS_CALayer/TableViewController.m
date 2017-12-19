@@ -25,6 +25,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.navigationController.navigationBar.translucent = NO;
+    
     self.demoViews = @[[PaySuccessView class],[InstrumentProgressView class],[WaveView class],[CircleWaitingView class],[RainView class],[TextLayerView class],[TiledLayerView class],[TransformView class]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }

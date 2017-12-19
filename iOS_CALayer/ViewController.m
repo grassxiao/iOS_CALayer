@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     if(!self.customViewClass){
         self.customViewClass = [PaySuccessView class];
     }
@@ -30,8 +29,6 @@
     self.customView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.customView];
     [self showTime];
-    
-    
 }
 
 -(void)dealloc{

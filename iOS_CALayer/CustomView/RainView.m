@@ -93,6 +93,10 @@
     return theImage;
 }
 
+-(void)layoutSublayersOfLayer:(CALayer *)layer{
+    _emitterLayer.emitterPosition = CGPointMake(self.bounds.size.width/2, 0);
+    _emitterLayer.emitterSize = CGSizeMake(self.bounds.size.width, 1);
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

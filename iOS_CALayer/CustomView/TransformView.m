@@ -43,7 +43,7 @@
 -(void)createSelf{
     self.transformLayer = [CATransformLayer layer];
     self.transformLayer.bounds = CGRectMake(0, 0, 100, 100);
-    self.transformLayer.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2-50);
+    self.transformLayer.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
     
     //前
     CATransform3D trans = CATransform3DMakeTranslation(0, 0, 50);
@@ -99,6 +99,10 @@
     trans = CATransform3DConcat(trans, rotateY);
     
     self.transformLayer.transform = trans;
+}
+
+-(void)layoutSublayersOfLayer:(CALayer *)layer{
+    self.transformLayer.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
 }
 
 /*

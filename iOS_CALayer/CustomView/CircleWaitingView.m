@@ -92,7 +92,7 @@
     CGFloat radius = 10;
     
     self.replicatorLayer.frame = self.bounds;
-    self.circleLayer.position = CGPointMake(width-radius, height/2);
+    self.circleLayer.position = CGPointMake(self.bounds.size.width/2+MIN(width, height)/2-radius, height/2);
     self.circleLayer.bounds = CGRectMake(0, 0, radius*2, radius*2);
     UIBezierPath* path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(0,0) radius:radius startAngle:0 endAngle:2*M_PI clockwise:YES];
     self.circleLayer.path = path.CGPath;
