@@ -29,6 +29,7 @@
     self.customView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.customView];
     [self showTime];
+    
 }
 
 -(void)dealloc{

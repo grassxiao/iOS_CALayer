@@ -16,6 +16,7 @@
 #import "TextLayerView.h"
 #import "TiledLayerView.h"
 #import "TransformView.h"
+#import "CustomPropertyAniView.h"
 
 @interface TableViewController ()
 @property (nonatomic,strong) NSArray* demoViews;
@@ -29,7 +30,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationController.navigationBar.translucent = NO;
     
-    self.demoViews = @[[PaySuccessView class],[InstrumentProgressView class],[WaveView class],[CircleWaitingView class],[RainView class],[TextLayerView class],[TiledLayerView class],[TransformView class]];
+    self.demoViews = @[[PaySuccessView class],[InstrumentProgressView class],[WaveView class],[CircleWaitingView class],[RainView class],[TextLayerView class],[TiledLayerView class],[TransformView class],[CustomPropertyAniView class]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 

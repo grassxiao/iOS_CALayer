@@ -25,6 +25,7 @@
 		188485F41FE8AC7A00295EB5 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 188485F31FE8AC7900295EB5 /* snow.png */; };
 		188485F71FE8AC9C00295EB5 /* TiledLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188485F61FE8AC9C00295EB5 /* TiledLayerView.m */; };
 		188485FA1FE8E32900295EB5 /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188485F91FE8E32900295EB5 /* TransformView.m */; };
+		188485FE1FEB51CF00295EB5 /* CustomPropertyAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188485FD1FEB51CF00295EB5 /* CustomPropertyAniView.m */; };
 		226702D8AFA72FC55C861828 /* libPods-iOS_CALayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D84B7EB027535CAAEAD255 /* libPods-iOS_CALayer.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		188485F61FE8AC9C00295EB5 /* TiledLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiledLayerView.m; sourceTree = "<group>"; };
 		188485F81FE8E32900295EB5 /* TransformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformView.h; sourceTree = "<group>"; };
 		188485F91FE8E32900295EB5 /* TransformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformView.m; sourceTree = "<group>"; };
+		188485FC1FEB51CF00295EB5 /* CustomPropertyAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPropertyAniView.h; sourceTree = "<group>"; };
+		188485FD1FEB51CF00295EB5 /* CustomPropertyAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPropertyAniView.m; sourceTree = "<group>"; };
 		4C0474F4661DCF156B15930B /* Pods-iOS_CALayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_CALayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_CALayer/Pods-iOS_CALayer.debug.xcconfig"; sourceTree = "<group>"; };
 		8296094A6AF33C34546BE45D /* Pods-iOS_CALayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_CALayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_CALayer/Pods-iOS_CALayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +178,8 @@
 		188485BB1FE0C1B900295EB5 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				188485FC1FEB51CF00295EB5 /* CustomPropertyAniView.h */,
+				188485FD1FEB51CF00295EB5 /* CustomPropertyAniView.m */,
 				188485C41FE10E5F00295EB5 /* InstrumentProgressView.h */,
 				188485C51FE10E5F00295EB5 /* InstrumentProgressView.m */,
 				188485BF1FE0C22E00295EB5 /* PaySuccessView.h */,
@@ -414,6 +419,7 @@
 				188485C91FE1106E00295EB5 /* TableViewController.m in Sources */,
 				188485C11FE0C22E00295EB5 /* PaySuccessView.m in Sources */,
 				188485C61FE10E5F00295EB5 /* InstrumentProgressView.m in Sources */,
+				188485FE1FEB51CF00295EB5 /* CustomPropertyAniView.m in Sources */,
 				188485991FE0C09600295EB5 /* main.m in Sources */,
 				188485E61FE686CB00295EB5 /* CircleWaitingView.m in Sources */,
 				188485EF1FE7FEF500295EB5 /* RainView.m in Sources */,
