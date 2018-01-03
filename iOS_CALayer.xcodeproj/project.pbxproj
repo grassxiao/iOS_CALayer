@@ -26,6 +26,8 @@
 		188485F71FE8AC9C00295EB5 /* TiledLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188485F61FE8AC9C00295EB5 /* TiledLayerView.m */; };
 		188485FA1FE8E32900295EB5 /* TransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188485F91FE8E32900295EB5 /* TransformView.m */; };
 		188485FE1FEB51CF00295EB5 /* CustomPropertyAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188485FD1FEB51CF00295EB5 /* CustomPropertyAniView.m */; };
+		188486021FFA55CC00295EB5 /* HeadlineWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188486011FFA55CC00295EB5 /* HeadlineWaitingView.m */; };
+		188486061FFBBE3300295EB5 /* ProxyDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 188486051FFBBE3300295EB5 /* ProxyDisplayLink.m */; };
 		226702D8AFA72FC55C861828 /* libPods-iOS_CALayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D84B7EB027535CAAEAD255 /* libPods-iOS_CALayer.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,10 @@
 		188485F91FE8E32900295EB5 /* TransformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformView.m; sourceTree = "<group>"; };
 		188485FC1FEB51CF00295EB5 /* CustomPropertyAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPropertyAniView.h; sourceTree = "<group>"; };
 		188485FD1FEB51CF00295EB5 /* CustomPropertyAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPropertyAniView.m; sourceTree = "<group>"; };
+		188486001FFA55CC00295EB5 /* HeadlineWaitingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadlineWaitingView.h; sourceTree = "<group>"; };
+		188486011FFA55CC00295EB5 /* HeadlineWaitingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadlineWaitingView.m; sourceTree = "<group>"; };
+		188486041FFBBE3300295EB5 /* ProxyDisplayLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyDisplayLink.h; sourceTree = "<group>"; };
+		188486051FFBBE3300295EB5 /* ProxyDisplayLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyDisplayLink.m; sourceTree = "<group>"; };
 		4C0474F4661DCF156B15930B /* Pods-iOS_CALayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_CALayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_CALayer/Pods-iOS_CALayer.debug.xcconfig"; sourceTree = "<group>"; };
 		8296094A6AF33C34546BE45D /* Pods-iOS_CALayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_CALayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_CALayer/Pods-iOS_CALayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +146,7 @@
 		188485881FE0C09600295EB5 /* iOS_CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				188486031FFBBE1A00295EB5 /* Common */,
 				188485EA1FE7EF1800295EB5 /* Resource */,
 				188485BB1FE0C1B900295EB5 /* CustomView */,
 				188485891FE0C09600295EB5 /* AppDelegate.h */,
@@ -196,6 +203,8 @@
 				188485F61FE8AC9C00295EB5 /* TiledLayerView.m */,
 				188485F81FE8E32900295EB5 /* TransformView.h */,
 				188485F91FE8E32900295EB5 /* TransformView.m */,
+				188486001FFA55CC00295EB5 /* HeadlineWaitingView.h */,
+				188486011FFA55CC00295EB5 /* HeadlineWaitingView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -206,6 +215,15 @@
 				188485F31FE8AC7900295EB5 /* snow.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		188486031FFBBE1A00295EB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				188486041FFBBE3300295EB5 /* ProxyDisplayLink.h */,
+				188486051FFBBE3300295EB5 /* ProxyDisplayLink.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5F9C264ADD2ACAE845654CD1 /* Pods */ = {
@@ -421,10 +439,12 @@
 				188485C61FE10E5F00295EB5 /* InstrumentProgressView.m in Sources */,
 				188485FE1FEB51CF00295EB5 /* CustomPropertyAniView.m in Sources */,
 				188485991FE0C09600295EB5 /* main.m in Sources */,
+				188486061FFBBE3300295EB5 /* ProxyDisplayLink.m in Sources */,
 				188485E61FE686CB00295EB5 /* CircleWaitingView.m in Sources */,
 				188485EF1FE7FEF500295EB5 /* RainView.m in Sources */,
 				188485F71FE8AC9C00295EB5 /* TiledLayerView.m in Sources */,
 				188485F21FE8A2F200295EB5 /* TextLayerView.m in Sources */,
+				188486021FFA55CC00295EB5 /* HeadlineWaitingView.m in Sources */,
 				1884858B1FE0C09600295EB5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

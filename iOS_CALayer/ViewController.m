@@ -11,6 +11,7 @@
 #import "InstrumentProgressView.h"
 #import "WaveView.h"
 #import "CircleWaitingView.h"
+#import "HeadlineWaitingView.h"
 
 @interface ViewController ()
 @property(nonatomic,strong) UIView* customView;
@@ -47,6 +48,25 @@
         InstrumentProgressView* view = (InstrumentProgressView*)self.customView;
         [view setStartDegrees:135 andEndDegrees:45];
         [view setProgress:0.9f withAni:YES];
+    }
+    else if([self.customView isMemberOfClass:[HeadlineWaitingView class]]){
+        HeadlineWaitingView* view = (HeadlineWaitingView*)self.customView;
+        [self test:view];
+    }
+}
+
+-(void)test:(HeadlineWaitingView*)view{
+    CGFloat progress = view.progress + 0.03;
+    if(progress >= 1){
+        view.progress = 1;
+        [view startAni];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [view stopAni];
+        });
+    }
+    else{
+        view.progress = progress;
+        [self performSelector:@selector(test:) withObject:view afterDelay:0.1];
     }
 }
 

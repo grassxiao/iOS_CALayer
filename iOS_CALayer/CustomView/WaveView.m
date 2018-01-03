@@ -7,38 +7,7 @@
 //
 
 #import "WaveView.h"
-
-typedef void(^DisplayBlock)(void);
-
-@interface ProxyDisplayLink : NSObject
-@property (nonatomic,copy) DisplayBlock displayBlock;
-@end
-
-@implementation ProxyDisplayLink
-
-+(CADisplayLink*)proxyDisplayLink:(DisplayBlock)block{
-    ProxyDisplayLink* proxy = [[ProxyDisplayLink alloc] initWithBlock:block];
-    CADisplayLink* displayLink = [CADisplayLink displayLinkWithTarget:proxy selector:@selector(update)];
-    return displayLink;
-}
-
--(void)update{
-    if(self.displayBlock){
-        self.displayBlock();
-    }
-}
-
--(instancetype)initWithBlock:(DisplayBlock)block{
-    self = [super init];
-    self.displayBlock = block;
-    return self;
-}
-
--(void)dealloc{
-    NSLog(@"ProxyDisplayLink dealloc");
-}
-
-@end
+#import "ProxyDisplayLink.h"
 
 @interface WaveView()
 @property (nonatomic,strong) CAShapeLayer* bezierShapeLayer;
